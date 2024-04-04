@@ -1,0 +1,46 @@
+
+.scroll-down {
+  height: 50px;
+  width: 30px;
+  border: 4px rgba(0,0,0,0.6);
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.scroll-down::before,
+.scroll-down::after {
+  content: '';
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  border: 1px solid rgba(84, 84, 84, 0.69);
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1s ease-in-out infinite;
+}
+
+.scroll-down::after {
+  top: 50%;
+}
+
+@keyframes scroll-down {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 210%;
+  }
+}

@@ -1,0 +1,25 @@
+nav {
+  background-color: rgba(0, 0, 0, 0.0);
+  backdrop-filter: blur(10px);
+}
+
+.navbar {
+  color: rgba(255,255,255,0.5);
+  font-size: larger;
+}
+
+.navbar .nav-link {
+  color: rgba(255,255,255,0.5);
+}
+
+.navbar .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.navbar .nav-link:hover {
+  color: rgba(255,255,255,0.5);
+}
+
+.navbar .nav-link.active {
+  color: white !important;
+}

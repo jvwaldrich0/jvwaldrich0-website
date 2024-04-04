@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+
+* {
+  font-family: 'Germania One', sans-serif;
+}
+
+body, html {
+  overflow-x: hidden; /* Remove a barra de rolagem horizontal */
+}
+
+body {
+  height: 210vh; /* Define a altura do body como 200% do tamanho da janela de visualização */
+  width: 100%; /* Garante que o body cubra toda a largura da janela de visualização */
+  background-color: #ffffff !important;
+  display: flex;
+  flex-direction: column;
+}
